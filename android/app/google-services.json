@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "55849483629",
+    "project_id": "hack-fusion-95272",
+    "storage_bucket": "hack-fusion-95272.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55849483629:android:ff1afb6d1c4ed3631fae64",
+        "android_client_info": {
+          "package_name": "com.example.hack_fusion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55849483629-sl3uhs04v5le4uf46vcgobel2g4s8o25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hack_fusion",
+            "certificate_hash": "c3aeac64a376de2e649e9e92be0aed6d72874897"
+          }
+        },
+        {
+          "client_id": "55849483629-1rlro8k54t73jq7r9q33ulm3hcs64kve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-wqMMSOw3KeY0Nq6ju1A6PZEQsgd021A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55849483629-1rlro8k54t73jq7r9q33ulm3hcs64kve.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "55849483629-2uk282ichflh2mbj01ksq7r1m05hc14f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackFusion"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
