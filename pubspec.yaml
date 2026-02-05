@@ -60,6 +60,12 @@ flutter:
   assets:
     - lib/assets/google_icon.png
 
+    - lib/assets/icons/home.png
+    - lib/assets/icons/events.png
+    - lib/assets/icons/bookmark.png
+    - lib/assets/icons/profile.png
+  
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

@@ -12,10 +12,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Hack Fusion Home"),
-        actions: [
-          IconButton(icon: const Icon(Icons.logout), onPressed: logout),
-        ],
+        title: const Text("Hack Fusion", style: TextStyle(color: Colors.white)),
+        backgroundColor: const Color(0xFF413253),
+        automaticallyImplyLeading: false,
       ),
       body: const Center(
         child: Text(
