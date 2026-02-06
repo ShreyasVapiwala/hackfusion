@@ -4,7 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:hack_fusion/screens/signup_page.dart';
-import 'package:hack_fusion/screens/home_page.dart';
+import 'package:hack_fusion/screens/home_screen.dart';
 import 'package:hack_fusion/screens/forget_password_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -126,7 +126,7 @@ class _LoginPageState extends State<LoginPage> {
     if (!mounted) return;
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (_) => const HomePage()),
+      MaterialPageRoute(builder: (_) => const HomeScreen()),
     );
   }
 

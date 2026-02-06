@@ -41,6 +41,10 @@ dependencies:
   cloud_firestore: ^6.1.2
   google_sign_in: ^6.1.5
 
+  shared_preferences: ^2.5.4
+
+  http: ^1.6.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -64,6 +68,10 @@ flutter:
     - lib/assets/icons/events.png
     - lib/assets/icons/bookmark.png
     - lib/assets/icons/profile.png
+    - lib/assets/icons/delete.png
+    - lib/assets/icons/help_center.png
+    - lib/assets/icons/settings.png
+    - lib/assets/icons/logout.png
   
 
   # The following line ensures that the Material Icons font is

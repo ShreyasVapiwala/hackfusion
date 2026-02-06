@@ -7,10 +7,9 @@ import 'package:hack_fusion/screens/home_screen.dart';
 import 'package:hack_fusion/screens/login_page.dart';
 
 void main() async {
+  // Ensure Flutter and Firebase are ready before the app starts
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -21,17 +20,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Hack Fusion',
+      theme: ThemeData(
+        primaryColor: const Color(0xFF413253),
+        useMaterial3: true,
+      ),
       home: StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Scaffold(
-              body: Center(child: CircularProgressIndicator()),
+              body: Center(
+                child: CircularProgressIndicator(color: Color(0xFF413253)),
+              ),
             );
           }
-          return snapshot.hasData
-              ? const HomeScreen()
-              : const LoginPage();
+
+          if (snapshot.hasData) {
+            return const HomeScreen();
+          }
+
+          return const LoginPage();
         },
       ),
     );

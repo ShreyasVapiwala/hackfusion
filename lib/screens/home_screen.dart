@@ -24,7 +24,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    // Notification service initialization removed
   }
 
   void _onItemTapped(int index) {
