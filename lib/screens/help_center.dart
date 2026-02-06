@@ -43,9 +43,9 @@ class _HelpCenterState extends State<HelpCenter> {
 
   // API key and endpoint
   static const String apiKey =
-      'AIzaSyBZI4WrtAV7PtdVl0iXtakpEL_t7hQjuVo'; // Replace with your actual API key
+      'AIzaSyC6cV_UH12lVIl9Cm0U1ayxI2kTmnzhJ3Y'; // Replace with your actual API key
   static const String apiUrl =
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$apiKey';
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=$apiKey';
 
   @override
   void initState() {
